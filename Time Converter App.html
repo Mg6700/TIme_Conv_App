@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Time Converter App.css">
+  <title>World Clock Converter</title>
+  <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.33/moment-timezone-with-data-10-year-range.js"></script>
+</head>
+<body>
+  <div class="converter-container">
+    <label for="fromTime">From Time:</label>
+    <input type="datetime-local" id="fromTime">
+
+    <label for="fromTimeZone">From Time Zone:</label>
+    <select id="fromTimeZone"></select>
+
+    <label for="toTimeZone">To Time Zone:</label>
+    <select id="toTimeZone"></select>
+
+    <button onclick="convertTime()">Convert</button>
+
+    <p id="result"></p>
+  </div>
+  <script src="Time Converter App.js"></script>
+</body>
+</html>
